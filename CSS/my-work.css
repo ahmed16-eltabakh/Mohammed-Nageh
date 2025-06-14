@@ -255,13 +255,6 @@ main .items .item .img-container img:hover {
     color: #fff;
 }
 
-.case-studies .container .case-study .text p{
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #e4e1e1;
-}
-
 .case-studies .container .case-study a button{
     font-size: 20px;
     font-weight: 700;
@@ -533,10 +526,6 @@ footer .copyright {
         font-size: 19px;
     }
 
-    .case-studies .container .case-study .text p{
-        font-size: 17px;
-    }
-
     main .items .item{
         text-align: center ;
         flex-direction: column;
@@ -626,10 +615,6 @@ footer .copyright {
 
     .case-studies .container .case-study .text h2{
         font-size: 20px;
-    }
-
-    .case-studies .container .case-study .text p{
-        font-size: 18px;
     }
 
     main .items .item .text h3 {
