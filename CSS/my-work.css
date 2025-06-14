@@ -235,13 +235,13 @@ main .items .item .img-container img:hover {
     outline: none;
     width: 30%;
     text-align: center;
-    box-shadow: 7px -2px 8px 6px #555;
+    box-shadow: 7px -2px 8px 6px #222222;
     transition: all 0.3s ease-in-out;
 }
 
 .case-studies .container .case-study:hover{
     transform: scale(1.03);
-    box-shadow: 7px -2px 8px 8px #222222;
+    box-shadow: 7px -2px 8px 8px #444;
 }
 
 .case-studies .container .case-study .img img{
@@ -272,7 +272,6 @@ main .items .item .img-container img:hover {
 .case-studies .container .case-study a button:hover{
     background-color: #fff;
     color: #000;
-
 }
 
 

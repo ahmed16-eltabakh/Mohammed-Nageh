@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 22px;
 }
 
 *::selection{
@@ -18,3 +19,138 @@ body{
     background-color: #000;
     color: #fff;
 }
+
+main{
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main h2{
+    padding: 8px;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+main .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .container .imgs img {
+    max-width: 100%;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.case-study {
+    font-family: 'Poppins', sans-serif;
+    color: #eee;
+    background-color: #111;
+    padding: 30px;
+    border-radius: 12px;
+    line-height: 1.8;
+    max-width: 850px;
+    margin: auto;
+}
+
+.case-study h2 {
+    color: #1a73e7;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #f0b429;
+    font-weight: bold;
+}
+
+.key {
+    color: #1a73e7; 
+    font-weight: bold;
+}
+
+.warn {
+    color: #e55e5e; 
+    font-weight: bold;
+}
+
+.step {
+    color: #1a73e7; 
+    font-weight: bold;
+}
+
+.lesson {
+    background: #222;
+    padding: 20px;
+    border-left: 6px solid #1a73e7;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #ddd;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .case-study {
+        padding: 20px;
+    }
+
+    .case-study h2 {
+        font-size: 20px;
+    }
+
+    .lesson {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    .case-study h2 {
+        font-size: 18px;
+    }
+
+    .lesson {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
