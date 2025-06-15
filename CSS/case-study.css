@@ -48,15 +48,17 @@ main .container .imgs {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 main .container .imgs img {
     max-width: 850px;
     width: 100%;
     height: 350px;
-    /* object-fit: cover; */
+    object-fit: cover;
     border-radius: 10px;    
     transition: all 0.3s ease-in-out;
+    position: relative;
 }
 
 main .container .imgs i {
@@ -83,6 +85,38 @@ main .container .imgs .fa-circle-left{
 main .container .imgs i:hover {
     background-color: rgba(0,0,0,0.7);
 }
+
+main .container .imgs .dots-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+main .container .imgs .dots-container .dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main .container .imgs .dots-container .dot.active {
+    background-color: #1a73e7;
+}
+
+main .container .imgs .dots-container .dot:hover{
+    background-color: #666;
+}
+
+
 
 .case-study {
     font-family: 'Poppins', sans-serif;
@@ -126,6 +160,24 @@ main .container .imgs i:hover {
     main {
         width: 90%;
         padding: 15px;
+    }
+
+    main .container .imgs img {
+        height: 220px; 
+    }
+
+    main .container .imgs .fa-circle-right,
+    main .container .imgs .fa-circle-left {
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    main .container .imgs .fa-circle-right {
+        right: 20px;
+    }
+
+    main .container .imgs .fa-circle-left {
+        left: 20px;
     }
 
     h2 {
