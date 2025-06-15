@@ -46,3 +46,46 @@ prev.addEventListener("click", ()=>{
     updateSlider();
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+firstImg.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+});
+
+firstImg.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    let swipeDistance = touchEndX - touchStartX;
+
+    if (Math.abs(swipeDistance) > 50) { // لازم تكون المسافة معقولة علشان نحسبها swipe
+        if (swipeDistance < 0) {
+            // سحب لليسار => صورة جديدة
+            currentIndex = (currentIndex + 1) % imgs.length;
+        } else {
+            // سحب لليمين => صورة سابقة
+            currentIndex = (currentIndex - 1 + imgs.length) % imgs.length;
+        }
+        updateSlider();
+    }
+}
