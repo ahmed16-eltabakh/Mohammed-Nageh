@@ -55,7 +55,7 @@ main .container .imgs img {
     max-width: 850px;
     width: 100%;
     height: 350px;
-    object-fit: cover;
+    /* object-fit: cover; */
     border-radius: 10px;    
     transition: all 0.3s ease-in-out;
     position: relative;
@@ -100,9 +100,9 @@ main .container .imgs .dots-container{
 }
 
 main .container .imgs .dots-container .dot{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
+    width: 25px;
+    height: 6px;
+    border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.2);
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -126,7 +126,8 @@ main .container .imgs .dots-container .dot:hover{
     border-radius: 12px;
     line-height: 1.8;
     max-width: 850px;
-    margin: auto;
+    /* margin: auto; */
+    text-align: start;
 }
 
 .case-study h2 {
@@ -173,11 +174,11 @@ main .container .imgs .dots-container .dot:hover{
     }
 
     main .container .imgs .fa-circle-right {
-        right: 20px;
+        right: -15px;
     }
 
     main .container .imgs .fa-circle-left {
-        left: 20px;
+        left: -15px;
     }
 
     h2 {
