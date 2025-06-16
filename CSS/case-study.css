@@ -100,7 +100,7 @@ main .container .imgs .dots-container{
 }
 
 main .container .imgs .dots-container .dot{
-    width: 25px;
+    width: 35px;
     height: 6px;
     border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.2);
