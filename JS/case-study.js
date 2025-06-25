@@ -5,12 +5,8 @@ let dotsContainer = document.querySelector(".dots-container");
 let currentIndex = 0;
 
 let imgs = [
-    "../imgs/case-studies/case-study (1).jpg",
-    "../imgs/case-studies/case-study (2).jpg",
-    "../imgs/case-studies/case-study (3).jpg",
-    "../imgs/case-studies/case-study (4).jpg",
-    "../imgs/case-studies/case-study (5).jpg",
-    "../imgs/case-studies/case-study (6).jpg"
+    "../imgs/case-studies/case-study (6).jpg",
+    "../imgs/case-studies/case-study (7).jpg"
 ];
 
 imgs.forEach((_, index) =>{

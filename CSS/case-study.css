@@ -127,7 +127,6 @@ main .container .imgs .dots-container .dot:hover{
     border-radius: 12px;
     line-height: 1.8;
     max-width: 850px;
-    /* margin: auto; */
     text-align: start;
 }
 
