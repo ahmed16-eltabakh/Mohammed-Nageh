@@ -5,9 +5,13 @@ let dotsContainer = document.querySelector(".dots-container");
 let currentIndex = 0;
 
 let imgs = [
-    "../imgs/case-studies/case-study (6).jpg",
-    "../imgs/case-studies/case-study (7).jpg"
+    "../imgs/case-studies/case-study-page-2.jpg",
 ];
+
+if (imgs.length === 1){
+    next.style.display = "none"
+    prev.style.display = "none"
+}
 
 imgs.forEach((_, index) =>{
     let dot = document.createElement('span');
