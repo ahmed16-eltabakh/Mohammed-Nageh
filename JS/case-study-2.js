@@ -5,7 +5,7 @@ let dotsContainer = document.querySelector(".dots-container");
 let currentIndex = 0;
 
 let imgs = [
-    "../imgs/case-studies/case-study-page-2.jpg",
+    "../imgs/case-studies/case-study-2/case-study-2 (1).jpg",
 ];
 
 if (imgs.length === 1){
