@@ -416,7 +416,8 @@ footer .copyright {
     }
 
     main .icons{
-        flex-direction: row;
+        /* flex-direction: row; */
+        display: none;
     }
 
     main .icons i{
