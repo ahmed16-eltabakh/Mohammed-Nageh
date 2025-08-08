@@ -67,6 +67,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row-reverse;
     padding: 20px 20px 150px 20px;
 }
 
@@ -416,7 +417,6 @@ footer .copyright {
     }
 
     main .icons{
-        /* flex-direction: row; */
         display: none;
     }
 
