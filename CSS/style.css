@@ -367,7 +367,7 @@ footer .copyright {
     transition: transform 370ms ease-in-out;
     z-index: 1000;         
     text-decoration: none; 
-    box-shadow: 0 8px 15px rgba(37, 211, 102, 0.5); 
+    box-shadow: 0 8px 15px rgba(38, 211, 102, 0.5); 
 }
 
 .whatsapp-float:hover {
