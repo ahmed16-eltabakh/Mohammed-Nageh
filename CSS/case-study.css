@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+
+*::selection{
+    color: #000;
+    background-color: #fff;
+}
+
+body{
+    font-family: 'Poppins', sans-serif, serif;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+main{
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main h2{
+    padding: 8px;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+main .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .container .imgs {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+main .container .imgs img {
+    max-width: 850px;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;    
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+
+main .container .imgs i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+main .container .imgs .fa-circle-right{
+    right: 60px;
+}
+
+main .container .imgs .fa-circle-left{
+    left: 60px;
+}
+
+main .container .imgs i:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+
+main .container .imgs .dots-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+main .container .imgs .dots-container .dot{
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main .container .imgs .dots-container .dot.active {
+    background-color: #1a73e7;
+}
+
+main .container .imgs .dots-container .dot:hover{
+    background-color: #666;
+}
+
+
+
+.case-study {
+    font-family: 'Poppins', sans-serif;
+    color: #eee;
+    background-color: #111;
+    padding: 30px;
+    border-radius: 12px;
+    line-height: 1.8;
+    max-width: 850px;
+    text-align: start;
+}
+
+.case-study h2 {
+    color: #1a73e7;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #fff;
+    font-weight: bold;
+}
+
+.step {
+    color: #fff; 
+    font-weight: bold;
+}
+
+.lesson {
+    background: #222;
+    padding: 20px;
+    border-left: 6px solid #1a73e7;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #ddd;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+        padding: 15px;
+    }
+
+    main .container .imgs img {
+        height: 220px; 
+    }
+
+    main .container .imgs .fa-circle-right,
+    main .container .imgs .fa-circle-left {
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    main .container .imgs .fa-circle-right {
+        right: -15px;
+    }
+
+    main .container .imgs .fa-circle-left {
+        left: -15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .case-study {
+        padding: 20px;
+    }
+
+    .case-study h2 {
+        font-size: 20px;
+    }
+
+    .lesson {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    .case-study h2 {
+        font-size: 18px;
+    }
+
+    .lesson {
+        font-size: 15px;
+    }
+}
+
