@@ -368,7 +368,7 @@ footer .copyright {
     position: fixed;        
     bottom: 20px;           
     left: 20px;            
-    background: linear-gradient(135deg, #1d954a, #004f1f); 
+    background: linear-gradient(135deg, #25D366, #1ebe5d); 
     color: white;
     border-radius: 50%;    
     width: 60px;
@@ -381,13 +381,13 @@ footer .copyright {
     transition: transform 370ms ease-in-out;
     z-index: 1000;         
     text-decoration: none; 
-    box-shadow: 0 6px 20px rgba(38, 211, 102, 0.5); 
+    box-shadow: 0 8px 15px rgba(38, 211, 102, 0.5); 
 }
 
 .whatsapp-float:hover {
     transform: scale(1.1);  
     box-shadow: 1px 4px 6px rgba(37, 211, 102, 0.5);
-    background: linear-gradient(135deg, #177a3d, #037732); 
+    background: linear-gradient(135deg, #1ebe5d, #0f8f3e); 
 }
 
 @media (max-width: 768px){
@@ -399,6 +399,7 @@ footer .copyright {
         .contact-btn-2{
         display: none;
     }
+
 
     nav {
         justify-content: space-between;
