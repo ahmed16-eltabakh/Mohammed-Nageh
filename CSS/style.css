@@ -353,7 +353,6 @@ footer .copyright {
     position: fixed;        
     bottom: 20px;           
     left: 20px;            
-    /* background-color: #25D366;  */
     background: linear-gradient(135deg, #25D366, #1ebe5d); 
     color: white;
     border-radius: 50%;    
