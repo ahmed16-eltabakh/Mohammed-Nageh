@@ -206,14 +206,22 @@ header .text a:hover{
     margin-bottom: 65px;
 }
 
-.contact-btn {
+.contact-btn-2{
     display: flex;
     justify-content: center; 
     margin-bottom: 40px;
     margin-top: 20px;
 }
 
-.contact-btn button {
+.contact-btn {
+    display: none;
+    justify-content: center; 
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.contact-btn button,
+.contact-btn-2 button {
     background-color: #111;
     color: #1a73e7;
     padding: 15px 30px;
@@ -227,17 +235,20 @@ header .text a:hover{
     overflow: hidden;
 }
 
-.contact-btn button a {
+.contact-btn button a,
+.contact-btn-2 button a {
     text-decoration: none;
     color: inherit;
 }
 
-.contact-btn button:hover {
+.contact-btn button:hover,
+.contact-btn-2 button:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: #25D366;
 }
 
-.contact-btn button::after {
+.contact-btn button::after,
+.contact-btn-2 button::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -248,14 +259,18 @@ header .text a:hover{
     transition: width 0.4s ease-in-out;
 }
 
-.contact-btn button:hover::after {
+.contact-btn button:hover::after,
+.contact-btn-2 button:hover::after {
     width: 100%; 
 }
 
-.contact-btn button a i{
+.contact-btn button a i,
+.contact-btn-2 button a i{
     font-size: 20px;
     margin-left: 3px;
 }
+
+
 
 main{
     padding: 5px;
@@ -353,7 +368,7 @@ footer .copyright {
     position: fixed;        
     bottom: 20px;           
     left: 20px;            
-    background: linear-gradient(135deg, #25D366, #1ebe5d); 
+    background: linear-gradient(135deg, #1d954a, #004f1f); 
     color: white;
     border-radius: 50%;    
     width: 60px;
@@ -376,6 +391,14 @@ footer .copyright {
 }
 
 @media (max-width: 768px){
+
+    .contact-btn{
+        display: flex;
+    }
+
+        .contact-btn-2{
+        display: none;
+    }
 
     nav {
         justify-content: space-between;
