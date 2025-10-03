@@ -20,7 +20,7 @@ function closeModal() {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll("header, .img-box");
+  const cards = document.querySelectorAll("header, .img-box, a, .icons, .text, .imgs, .img-container, .img, .trusted-img, .heading");
 
   cards.forEach(card => {
     card.style.opacity = "0";

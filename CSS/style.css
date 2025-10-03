@@ -210,19 +210,20 @@ header .text a:hover{
     display: flex;
     justify-content: center; 
     margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .contact-btn button {
     background-color: #111;
-    color: #fff;
+    color: #1a73e7;
     padding: 15px 30px;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     position: relative;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.1s ease-in-out;
     overflow: hidden;
 }
 
