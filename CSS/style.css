@@ -381,13 +381,13 @@ footer .copyright {
     transition: transform 370ms ease-in-out;
     z-index: 1000;         
     text-decoration: none; 
-    box-shadow: 0 8px 15px rgba(38, 211, 102, 0.5); 
+    box-shadow: 0 6px 20px rgba(38, 211, 102, 0.5); 
 }
 
 .whatsapp-float:hover {
     transform: scale(1.1);  
     box-shadow: 1px 4px 6px rgba(37, 211, 102, 0.5);
-    background: linear-gradient(135deg, #1ebe5d, #25D366); 
+    background: linear-gradient(135deg, #177a3d, #037732); 
 }
 
 @media (max-width: 768px){
