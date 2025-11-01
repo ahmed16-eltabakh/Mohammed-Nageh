@@ -19,7 +19,7 @@ body{
 }
 
 nav{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -27,7 +27,7 @@ nav{
     justify-content: center;
     align-items: center;
     z-index: 10;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 nav .logo a img{
@@ -56,6 +56,7 @@ nav .links a:hover{
 header{
     background-image: url('../imgs/landing-page/background-2.jpg');
     position: relative;
+    background-attachment: fixed;
     min-height: 100vh;
     background-size: cover;
     display: flex;
@@ -86,12 +87,6 @@ header .text{
     position: relative;
     z-index: 2;
 }
-
-/* header .text h1{
-    font-size: 3rem;        
-    color: #fff;            
-    margin-bottom: 10px;
-} */
 
 header .text h3{
     font-size: 1.5rem;
@@ -274,12 +269,14 @@ header .text button a {
 }
 
 .card {
+    background: linear-gradient(145deg, #1a1a1a, #111);
     background-color: #1a1a1a;
     padding: 30px 20px;
     border-radius: 15px;
     text-align: center;
-    width: 280px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    /* transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; */
+    transition: all 0.5s ease-in-out;
 }
 
 .card i {
@@ -302,8 +299,10 @@ header .text button a {
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    background: linear-gradient(145deg, #1a73e7, #4dabf5);
 }
 
 .card:hover i {
     transform: scale(1.2) rotate(10deg);
+    color: #fff;
 }
