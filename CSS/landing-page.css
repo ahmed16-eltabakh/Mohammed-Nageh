@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*::selection{
+    color: #000;
+    background-color: #fff;
+}
+
+body{
+    font-family: 'Poppins', sans-serif, serif;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background: transparent;
+}
+
+nav .logo a img{
+    width: 120px;
+    margin-right: 20px;
+}
+
+nav .links{
+    display: flex;
+    gap: 10px;
+}
+
+nav .links a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+nav .links a:hover{
+    color: #1a73e7;
+}
+
+header{
+    background-image: url('../imgs/landing-page/background-2.jpg');
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+} 
+
+header .logo img{
+    position: relative;
+    z-index: 2;
+    width: 300px;
+    margin-bottom: -40px;
+}
+
+header .text{
+    position: relative;
+    z-index: 2;
+}
+
+/* header .text h1{
+    font-size: 3rem;        
+    color: #fff;            
+    margin-bottom: 10px;
+} */
+
+header .text h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #d1d1d1;
+    margin-bottom: 8px;
+}
+
+header .text p{
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #ffffff;               
+    max-width: 700px;       
+    line-height: 1.6;       
+    margin: 0 auto;    
+}
+
+header .text button{
+    padding: 12px 25px;             
+    margin-top: 20px;
+    font-size: 20px;                 
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;              
+    cursor: pointer;
+    background: linear-gradient(90deg, #1a73e7, #4dabf5); 
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); 
+    transition: all 0.4s ease;  
+}
+
+header .text button:hover {
+    transform: translateY(-3px) scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4); 
+    background: linear-gradient(90deg, #4dabf5, #1a73e7); 
+}
+
+header .text button:focus {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+}
+
+header .text button a {
+    color: inherit;
+    text-decoration: none;
+    display: block; 
+}
+
+.about-us {
+    background-color: #000; 
+    padding: 80px 20px;
+    color: #fff;
+}
+
+.about-us .title h2 {
+    font-size: 2.7rem;
+    text-align: center;
+    color: #1a73e7;     
+    margin-bottom: 50px;
+    font-weight: 700;
+    position: relative;
+}
+
+.about-us .title h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #1a73e7;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.about-us .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+    flex-wrap: wrap;
+}
+
+.about-us .img {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+}
+
+.about-us .img img {
+    width: 100%;
+    max-width: 400px; 
+    border-radius: 15px; 
+    transition: transform 0.3s ease;
+}
+
+.about-us .text {
+    flex: 1;
+    text-align: right; 
+}
+
+.about-us .text h3 {
+    font-size: 2rem;
+    color: #1a73e7;
+    margin-bottom: 20px;
+}
+
+.about-us .text p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: #fff;
+}
+
+.about-us .container .text button{
+    padding: 12px 25px;             
+    margin-top: 20px;
+    font-size: 20px;                 
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;              
+    cursor: pointer;
+    background: linear-gradient(90deg, #1a73e7, #4dabf5); 
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); 
+    transition: all 0.4s ease;  
+}
+
+.about-us .container .text button:hover {
+    transform: translateY(-3px) scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4); 
+    background: linear-gradient(90deg, #4dabf5, #1a73e7); 
+}
+
+.about-us .container .text button:focus {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+}
+
+.about-us .container .text button a {
+    color: inherit;
+    text-decoration: none;
+    display: block; 
+}
+
+
+
+
+.our-service {
+    background-color: #000;
+    padding: 100px 20px;
+    color: #fff;
+}
+
+.our-service .title h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #1a73e7;
+    margin-bottom: 60px;
+    font-weight: 700;
+    position: relative;
+}
+
+.our-service .title h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 6px;
+    background: #1a73e7;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1a1a1a;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card i {
+    font-size: 60px;
+    color: #1a73e7;
+    transition: transform 0.3s ease;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.card:hover i {
+    transform: scale(1.2) rotate(10deg);
+}

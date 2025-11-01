@@ -89,6 +89,48 @@ main .heading {
     width: 80%;
 }
 
+.landing-page{
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 2px;
+}
+
+.landing-page button{
+    background-color: #111;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+.landing-page button a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.landing-page button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fafafa;
+}
+
+.landing-page button::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #1a73e7;
+    transition: width 0.4s ease-in-out;
+}
+
+
 main .items{
     display: flex;
     flex-direction: column;
@@ -335,7 +377,7 @@ main .ads-buttons button i:hover{
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    position: relative;
+    position: relative; 
     transition: all 0.4s ease-in-out;
     overflow: hidden;
 }
