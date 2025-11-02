@@ -15,7 +15,7 @@ setInterval(() => {
 }, 6000);
 
 document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".logo, .links, .home, .");
+  const cards = document.querySelectorAll(".nav, .text, .main-logo, .about-us, .our-service, .card, .clients, .logos-slide, .reviews, .slides, .whatsapp-float");
 
   cards.forEach(card => {
     card.style.opacity = "0";
