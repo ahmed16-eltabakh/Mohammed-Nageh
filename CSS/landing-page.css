@@ -460,9 +460,82 @@ header .text button a {
 
 
 
+.faq {
+  background: #000;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: right;
+  font-family: Arial, sans-serif;
+}
 
+.faq .title h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #1a73e7;
+  margin-bottom: 50px;
+  position: relative;
+}
 
+.faq .title h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 6px;
+  background: #1a73e7;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
 
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item h3 {
+  font-size: 1.4rem;
+  color: #1a73e7;
+  cursor: pointer;
+  padding: 15px 20px;
+  position: relative;
+  margin: 0;
+}
+
+.faq-item h3 .toggle {
+  float: left;
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.faq-item.active h3 .toggle {
+  transform: rotate(45deg); 
+}
+
+.faq-item p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #ccc;
+  padding: 0 20px 15px 20px;
+  border-top: 1px solid #1a73e7;
+  max-height: 0;        
+  opacity: 0;         
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+  padding-bottom: 0; 
+}
+
+.faq-item.active p {
+  max-height: 500px; 
+  opacity: 1;
+  padding-bottom: 15px;
+}
 
 
 
