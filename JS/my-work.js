@@ -27,7 +27,7 @@ adsBtns.forEach(btn => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".item, .skills-container, .case-study, .ads-buttons");
+  const cards = document.querySelectorAll(".item, .skills-container, .case-study, .ads-buttons, .landing-page");
 
   cards.forEach(card => {
     card.style.opacity = "0";
