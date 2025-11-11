@@ -679,6 +679,19 @@ footer {
   font-weight: 600;
 }
 
+.footer-column p {
+  color: #aaa;
+  text-decoration: none;
+  line-height: 1.9;
+  transition: all 0.3s ease;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.footer-column.contact p:last-child {
+  font-size: 14px;
+}
+
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
