@@ -1,7 +1,15 @@
+let menuIcon = document.getElementById("menu-icon");
+let menuItems = document.getElementById("menu-items");
+
 document.getElementById("menu-icon").addEventListener("click", function () {
     document.getElementById("menu-items").classList.toggle("active");
 });
 
+document.addEventListener("click", (e) => {
+  if (menuItems.classList.contains("active") && !menuItems.contains(e.target) && e.target !== menuIcon) {
+    menuItems.classList.remove("active"); 
+  }
+});
 
 function openModal(img) {
     var modal = document.getElementById("myModal");

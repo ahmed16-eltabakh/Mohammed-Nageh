@@ -61,6 +61,10 @@ nav .menu-items {
     gap: 15px;
 }
 
+.menu-items a:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -214,7 +218,7 @@ footer .copyright {
     font-size: 30px;
     cursor: pointer;
     transition: transform 370ms ease-in-out;
-    z-index: 1000;         
+    z-index: 5;         
     text-decoration: none; 
     box-shadow: 0 8px 15px rgba(38, 211, 102, 0.5); 
 }
@@ -233,21 +237,28 @@ footer .copyright {
         padding: 0 20px;
     }
 
-    nav .menu-items {
+   nav .menu-items {
         display: flex;
         flex-direction: column;
+        gap: 35px;
         position: absolute;
+        height: 100vh;
         top: -10px;
         left: -20px;
         z-index: 6;
-        background: rgba(0, 0, 0, 0.9);
-        width: 78%;
+        background: rgba(0, 0, 0, 0.7);
+        width: 75%;
         text-align: center;
         padding: 15px 0;
-        transform: translateY(-150%);
+        transform: translateY(-100%);
         transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
         opacity: 0;
     }
+
+    nav .menu-items a{
+        padding: 20px;
+    }
+
 
     nav .menu-items.active {
         transform: translateY(0);
