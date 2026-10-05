@@ -133,7 +133,24 @@ nav .btn button a {
     }
 }
 
+@media screen and (max-width: 1280px){
+  nav .links a {
+    font-size: 12px;
+    padding: 5px;
+    margin: 0;
+  }
 
+  nav .btn button{
+    padding: 12px 16px;             
+    margin-left: 8px;
+    font-size: 24px;                               
+  }
+
+  nav .logo a img{
+    margin-right: -5px;
+  }
+
+}
 
 header{
     background-image: url('../imgs/landing-page/background\ \(1\).jpeg');
